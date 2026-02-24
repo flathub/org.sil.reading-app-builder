@@ -135,5 +135,5 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://sil-app-builders-linux-artifacts.s3.amazonaws.com/refs/tags/v13.3.2/111/reading-app-builder.tgz
-        sha256: d8c466ef3eab561d91e6a7ff6321bf8bf2c451a47973c25663170a431205dbe7
+        url: https://sil-app-builders-linux-artifacts.s3.amazonaws.com/refs/tags/v13.4/114/reading-app-builder.tgz
+        sha256: 2e148aca1d171f6bc55c8edec73d89d6d32ccf175be9bbfa938adba00d9e43d4
