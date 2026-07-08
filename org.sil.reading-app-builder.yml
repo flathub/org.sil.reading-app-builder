@@ -29,6 +29,22 @@ finish-args:
 command: rab-run.sh
 
 modules:
+  # needed for dido (optional installation using "Tools > Install Aeneas")
+  - name: espeak-ng
+    buildsystem: autotools
+    cleanup:
+      - '*.a'
+    sources:
+      - type: git
+        url: https://github.com/espeak-ng/espeak-ng.git
+        tag: 1.52.0
+        commit: 4870adfa25b1a32b4361592f1be8a40337c58d6c
+        x-checker-data:
+          type: anitya
+          project-id: 12958
+          tag-template: $version
+
+  # build python3-aeneas after espeak-ng (creates a symbolic link from espeak-ng to espeak and we want both available to the end user)
   - name: python3-aeneas
     buildsystem: simple
     build-commands:
@@ -137,5 +153,3 @@ modules:
           - x86_64
         url: https://sil-app-builders-linux-artifacts.s3.amazonaws.com/master/137/reading-app-builder.tgz
         sha256: e73ac23353b1bdd3fc70fdee54f998de57b9a82b3ba32d521a7da87421631847
-
-
