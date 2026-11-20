@@ -164,8 +164,8 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://sil-app-builders-linux-artifacts.s3.amazonaws.com/master/160/reading-app-builder.tgz
-        sha256: 5176682580cd90fbabc2f0ddc16df3bd397e68496d704d337d31fe4fcd7bf7aa
+        url: https://sil-app-builders-linux-artifacts.s3.amazonaws.com/master/161/reading-app-builder.tgz
+        sha256: e179915a08cf3c24d0a77e8152c6210a3bf608d8a0f6e7950f63db7d7a8d43f9
         x-checker-data:
           type: json
           url: https://sil-app-builders-linux-artifacts.s3.amazonaws.com/latest/flatpak.json
